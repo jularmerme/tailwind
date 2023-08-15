@@ -1,1 +1,17 @@
 https://www.udemy.com/course/tailwind-from-scratch/learn/lecture/32342372?start=0#overview
+
+Code & Demos:
+
+Main Website With Project Demos - https://tailwindfromscratch.com
+
+Code For Sandbox - https://github.com/bradtraversy/tailwind-sandbox
+
+Code For All Projects - https://github.com/bradtraversy/tailwind-course-projects
+
+Code For Simple Tailwind Starter - https://github.com/bradtraversy/simple-tailwind-starter
+
+
+
+Documentation:
+
+https://tailwindcss.com
