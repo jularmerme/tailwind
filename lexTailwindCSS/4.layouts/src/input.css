@@ -1,0 +1,62 @@
+/**
+* This injects Tailwind's base styles and any base styles registered by
+* plugins.
+*/
+@tailwind base;
+
+/**
+* This injects Tailwind's component classes and any component classes
+* registered by plugins
+**/
+@tailwind components;
+
+/**
+* This injects Tailwind's utility classes and any utility classes registered
+* by plugins
+**/
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-2xl;
+  }
+  h2 {
+    @apply text-xl;
+  }
+}
+
+@layer components {
+  .btn-blue {
+    @apply bg-powderblue-700 hover:bg-powderblue-300 text-gray-50 font-bold py-2 rounded p-5;
+  }
+}
+
+@layer utilities {
+  .filter-none {
+    filter: none;
+  }
+
+  .filter-grayscale {
+    filter: grayscale(100%);
+  }
+}
+
+/* 
+* @layer: Use the `layer` directive to tell Tailwind which "bucket" a set of custom styles belong to. Valid
+* layers are `base`, `components` and `utilities`.
+* 
+* @apply: Use `@apply` to inline any existing utility classes into your own custom CSS. 
+* 
+* @config: Use the `@config` directive to specify which config file Tailwind should use when compiling
+* that CSS file. This is useful for projects that need to use different configuration files for different CSS
+* entry points.
+*   -->  @config "./tailwind.site.config.js"  <--
+* 
+* Functions
+* Tailwind adds a few custom functions you can use in your CSS to access Tailwind-specific values.
+* These functions are evaluated at build-time, and are replaced by static values in your final CSS.
+* 
+*     * theme(): Use the `theme` function to access your Tailwind config values using dot notation.
+*     * screen(): The `screen` function allows you to create media queries that reference your breakpoints
+*     by name instead of duplicating their values in your own CSS.
+*/
