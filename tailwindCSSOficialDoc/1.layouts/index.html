@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          container: {
+            padding: {
+              DEFAULT: '1rem',
+              sm: '2rem',
+              lg: '4rem',
+              xl: '5rem',
+              '2xl': '6rem',
+            },
+          },
+        },
+        columns: {
+          '4xs': '14rem',
+        },
+      };
+    </script>
+    <title>Document</title>
+  </head>
+  <body>
+    <h3 class="bg-purple-200 text-slate-500 text-center m-2 p-2">
+      If you want to specify a different amount for each breakpoint
+    </h3>
+    <div class="container md:bg-green-400">
+      Note that unlike containers you might have used in other frameworks
+    </div>
+    <div class="columns-4 my-5">
+      <img
+        src="https://picsum.photos/id/1/200/300"
+        alt=""
+        class="w-full aspect-square"
+      />
+      <img
+        src="https://picsum.photos/id/1/200/300"
+        alt=""
+        class="w-full aspect-square"
+      />
+      <img
+        src="https://picsum.photos/id/1/200/300"
+        alt=""
+        class="w-full aspect-square"
+      />
+      <img
+        src="https://picsum.photos/id/1/200/300"
+        alt=""
+        class="w-full aspect-square"
+      />
+    </div>
+    <div class="columns-2">
+      <p>Well, let me tell you something</p>
+      <p class="hover:break-after-column">Sure, go ahead, laugh...</p>
+      <p>Maybe we can live without...</p>
+      <p>Look. If you think this is...</p>
+    </div>
+    <div class="columns-2">
+      <p>Well, let me tell you something</p>
+      <p class="hover:break-before-column">Sure, go ahead, laugh...</p>
+      <p>Maybe we can live without...</p>
+      <p>Look. If you think this is...</p>
+    </div>
+    <div class="columns-2">
+      <p>Well, let me tell you something, ...</p>
+      <p class="break-inside-avoid-column">Sure, go ahead, laugh...</p>
+      <p>Maybe we can live without...</p>
+      <p>Look. If you think this is...</p>
+    </div>
+    <div class="my-5">
+      <span
+        class="box-decoration-slice hover:box-decoration-clone bg-gradient-to-r from-blue-500 to-yellow-500 text-white p-5 my-5"
+      >
+        Use the box-decoration-slice and box-decoration-clone utilities to
+        control whether properties like background, border, border-image, <br />
+        box-shadow, clip-page, margin, and padding should be rendered as if the
+        element were one continuous fragment, or distinct blocks..
+      </span>
+    </div>
+    <div class="box-border h-32 w-32 border-4 py-10 bg-purple-300">
+      totalWidth = b + p + w
+    </div>
+    <div class="box-content h-32 w-32 p-4 border-4 bg-purple-300">
+      totalWidth = w
+    </div>
+    <div>
+      When controlling the flow of text, using the CSS property
+      <span class="inline bg-purple-200">display: inline</span>
+      will cause the text inside the element to wrap normally. While using the
+      property
+      <span class="inline-block bg-purple-200">display: inline-block</span> will
+      wrap the element to prevent the text inside from extending beyond its
+      parent. Lastly, using the property
+      <span class="block bg-purple-200">display: block</span>
+      will put the element on its own line and fill its parent.
+    </div>
+    <div class="p-4">
+      <div class="flow-root ...">
+        <div class="my-4 ...">Well, let me tell you something, ...</div>
+      </div>
+      <div class="flow-root ...">
+        <div class="my-4 ...">Sure, go ahead, laugh if you want...</div>
+      </div>
+    </div>
+    <div class="grid gap-4 grid-cols-3 grid-rows-3 my-10">
+      <span class="bg-blue-300 rounded-lg text-center p-5">01</span
+      ><span class="bg-blue-300 rounded-lg text-center p-5">02</span
+      ><span class="bg-blue-300 rounded-lg text-center p-5">03</span
+      ><span class="bg-blue-300 rounded-lg text-center p-5">04</span
+      ><span class="bg-blue-300 rounded-lg text-center p-5">05</span
+      ><span class="bg-blue-300 rounded-lg text-center p-5">06</span>
+      <span class="bg-blue-300 rounded-lg text-center p-5">07</span>
+      <span class="bg-blue-300 rounded-lg text-center p-5">08</span>
+      <span class="bg-blue-300 rounded-lg text-center p-5">09</span>
+      <span class="bg-blue-300 rounded-lg text-center p-5">01</span
+      ><span class="bg-blue-300 rounded-lg text-center p-5">02</span
+      ><span class="bg-blue-300 rounded-lg text-center p-5">03</span
+      ><span class="bg-blue-300 rounded-lg text-center p-5">04</span
+      ><span class="bg-blue-300 rounded-lg text-center p-5">05</span
+      ><span class="bg-blue-300 rounded-lg text-center p-5">06</span>
+      <span class="bg-blue-300 rounded-lg text-center p-5">07</span>
+      <span class="bg-blue-300 rounded-lg text-center p-5">08</span>
+      <span class="bg-blue-300 rounded-lg text-center p-5">09</span>
+    </div>
+    <div>
+      <span class="inline-grid grid-cols-3 gap-4">
+        <span class="bg-blue-300 rounded-lg text-center p-5">01</span
+        ><span class="bg-blue-300 rounded-lg text-center p-5">02</span
+        ><span class="bg-blue-300 rounded-lg text-center p-5">03</span
+        ><span class="bg-blue-300 rounded-lg text-center p-5">04</span
+        ><span class="bg-blue-300 rounded-lg text-center p-5">05</span
+        ><span class="bg-blue-300 rounded-lg text-center p-5">06</span>
+      </span>
+      <span class="inline-grid grid-cols-3 gap-4">
+        <span class="bg-blue-300 rounded-lg text-center p-5">11</span
+        ><span class="bg-blue-300 rounded-lg text-center p-5">12</span
+        ><span class="bg-blue-300 rounded-lg text-center p-5">13</span
+        ><span class="bg-blue-300 rounded-lg text-center p-5">14</span
+        ><span class="bg-blue-300 rounded-lg text-center p-5">15</span
+        ><span class="bg-blue-300 rounded-lg text-center p-5">16</span>
+      </span>
+    </div>
+    <div class="table w-full my-10">
+      <div class="table-header-group border-2">
+        <div class="table-row">
+          <div
+            class="table-cell border-b-2 text-center bg-blue-100 border-blue-100"
+          >
+            Song
+          </div>
+          <div
+            class="table-cell text-center border-b-2 bg-blue-100 border-blue-100"
+          >
+            Artist
+          </div>
+          <div
+            class="table-cell text-left border-b-2 bg-blue-100 border-blue-100"
+          >
+            Year
+          </div>
+        </div>
+      </div>
+      <div class="table-row-group">
+        <div class="table-row">
+          <div class="table-cell ...">
+            The Sliding Mr. Bones (Next Stop, Pottersville)
+          </div>
+          <div class="table-cell ...">Malcolm Lockyer</div>
+          <div class="table-cell ...">1961</div>
+        </div>
+        <div class="table-row">
+          <div class="table-cell bg-gray-100">Witchy Woman</div>
+          <div class="table-cell bg-gray-100">The Eagles</div>
+          <div class="table-cell bg-gray-100">1972</div>
+        </div>
+        <div class="table-row">
+          <div class="table-cell ...">Shining Star</div>
+          <div class="table-cell ...">Earth, Wind, and Fire</div>
+          <div class="table-cell ...">1975</div>
+        </div>
+      </div>
+    </div>
+    <div class="my-5">
+      <img
+        class="float-right w-24 h-24"
+        src="https://picsum.photos/id/1/200/300"
+      />
+      <p>
+        Maybe we can live without libraries, people like you and me. Maybe.
+        Sure, we're too old to change the world, but what about that kid,
+        sitting down, opening a book, right now, in a branch at the local
+        library and finding drawings of pee-pees and wee-wees on the Cat in the
+        Hat and the Five Chinese Brothers? Doesn't HE deserve better? Look. If
+        you think this is about overdue fines and missing books, you'd better
+        think again. This is about that kid's right to read a book without
+        getting his mind warped! Or: maybe that turns you on, Seinfeld; maybe
+        that's how y'get your kicks. You and your good-time buddies.
+      </p>
+    </div>
+    <div class="my-5">
+      <img
+        class="float-left w-24 h-24"
+        src="https://picsum.photos/id/1/200/300"
+      />
+      <p>
+        Maybe we can live without libraries, people like you and me. Maybe.
+        Sure, we're too old to change the world, but what about that kid,
+        sitting down, opening a book, right now, in a branch at the local
+        library and finding drawings of pee-pees and wee-wees on the Cat in the
+        Hat and the Five Chinese Brothers? Doesn't HE deserve better? Look. If
+        you think this is about overdue fines and missing books, you'd better
+        think again. This is about that kid's right to read a book without
+        getting his mind warped! Or: maybe that turns you on, Seinfeld; maybe
+        that's how y'get your kicks. You and your good-time buddies.
+      </p>
+    </div>
+    <div class="my-5">
+      <img
+        class="float-none w-24 h-24"
+        src="https://picsum.photos/id/1/200/300"
+      />
+      <p>
+        Maybe we can live without libraries, people like you and me. Maybe.
+        Sure, we're too old to change the world, but what about that kid,
+        sitting down, opening a book, right now, in a branch at the local
+        library and finding drawings of pee-pees and wee-wees on the Cat in the
+        Hat and the Five Chinese Brothers? Doesn't HE deserve better? Look. If
+        you think this is about overdue fines and missing books, you'd better
+        think again. This is about that kid's right to read a book without
+        getting his mind warped! Or: maybe that turns you on, Seinfeld; maybe
+        that's how y'get your kicks. You and your good-time buddies.
+      </p>
+    </div>
+  </body>
+</html>
