@@ -1,0 +1,21 @@
+1. npm init -y
+2. create html file(index.html)
+3. npm install -D tailwindcss
+4. npx tailwindcss init
+5. create input css file(../src/style.css)
+6. configure the tailwind.config.js with the css paths
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ["./*.{html,js}"],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+7. Add tailwind base, components and utilities to the css file(style.css)
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+8. npx tailwindcss -i ./src/style.css -o ./dist/style.css -–watch
+9. Populate the html file and add
+<link href="./dist/style.css" rel="stylesheet">
